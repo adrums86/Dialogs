@@ -3,16 +3,15 @@ package tcss450.uw.edu.dialogs;
 
 import android.app.Dialog;
 import android.app.TimePickerDialog;
-import android.icu.util.Calendar;
+
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.text.format.DateFormat;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TimePicker;
 import android.widget.Toast;
+
+import java.util.Calendar;
 
 
 /**

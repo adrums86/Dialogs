@@ -37,7 +37,13 @@ public class MainActivity extends AppCompatActivity {
         } else if (v.getId() == R.id.date_button) {
             fragment = new DatePickerDialogFragment();
         } else if (v.getId() == R.id.notification_button) {
-
+            NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this);
+            mBuilder.setSmallIcon(R.drawable.ic_stat_name);
+            mBuilder.setContentTitle("Notification title");
+            mBuilder.setContentText("Notification content");
+            NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+            int notificationID = 1;
+            mNotificationManager.notify(notificationID, mBuilder.build());
         }
 
         if (fragment != null)
